@@ -23,7 +23,4 @@ Este proyecto fue realizado por:
 [![Lenguajes](https://img.shields.io/github/languages/count/carloscastromx/ahorcado)](https://github.com/carloscastromx/ahorcado)
 
 [![Lineas de codigo](https://img.shields.io/github/languages/code-size/carloscastromx/ahorcado)](https://github.com/carloscastromx/ahorcado)
-## Demo
-
-[Jugar](https://ahorcado.wolfate.com/)
 
