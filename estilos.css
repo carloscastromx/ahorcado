@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+body{
+    background:
+      radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#646f63 68% 70%,#0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
+      radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#646f63 68% 70%,#0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
+      radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#646f63 68% 70%,#0000 72%) 0 0/calc(2*32px) calc(2*32px),
+      radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#646f63 68% 70%,#0000 72%) 0 0/calc(2*32px) calc(2*32px),
+      repeating-conic-gradient(#364935 0 25%,#0000 0 50%) 0 0/calc(2*32px) calc(2*32px),
+      radial-gradient(#0000 66%,#646f63 68% 70%,#0000 72%) 0 calc(32px/2)/32px 32px
+      #364935;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      max-height: 100vh;
+}
+body.body-tablero{
+    min-height: 100vh;
+    max-height: none;
+    align-items: flex-start;
+}
+.contenedor{
+    width: 90%;
+    background-color: #f9f9f9;
+    height: 70%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    flex-direction: column;
+}
+h1{
+    font-size: 50px;
+}
+.txt-inicio{
+    margin: 50px 0;
+}
+.form-registro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.form-registro input{
+    padding: 4px;
+}
+.form-registro button{
+    padding: 3px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #364935;
+    background: #364935;
+    color: #fff;
+    padding: 6px 0;
+    cursor: pointer;
+}
+.error-txt{
+    display: none;
+}
+h2.acompletar{
+    font-size: 28px;
+}
+.ahorcado-img{
+    max-width: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+.rows-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 0;
+}
+.inputs-juego button{
+    margin-left: 15px;
+    padding: 4px;
+}
+.inputs-juego input{
+    padding: 4px;
+    width: 50px;
+}
+.tabla-puntos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.encabezado-tabla{
+    font-size: 22px;
+    font-weight: 700;
+}
+.fila-tabla{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1.5px solid #c9c9c9;
+    padding: 8px;
+}
+.fila-tabla p{
+    position: relative;
+}
+.tabla-puntos .fila-tabla:nth-child(n+2){
+    border-top: 0;
+}
+.tabla-puntos .fila-tabla:nth-child(2) p:first-child::before{
+    content: "";
+    background: url("img/primer-lugar.png");
+    background-size: contain;
+    left: -50px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+}
+.tabla-puntos .fila-tabla:nth-child(3) p:first-child::before{
+    content: "";
+    background: url("img/segundo-lugar.png");
+    background-size: contain;
+    left: -50px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+}
+.tabla-puntos .fila-tabla:nth-child(4) p:first-child::before{
+    content: "";
+    background: url("img/tercer-lugar.png");
+    background-size: contain;
+    left: -50px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+}
